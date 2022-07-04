@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Taro-Bury 埋点库 | Pokemon</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/pika-ui/assets/img/pika-logo.png">
+    <meta name="description" content="搜车全流程小程序解决方案">
+    
+    <link rel="preload" href="/pika-ui/assets/css/0.styles.8392f775.css" as="style"><link rel="preload" href="/pika-ui/assets/js/app.8c90d7c6.js" as="script"><link rel="preload" href="/pika-ui/assets/js/8.af1739a3.js" as="script"><link rel="preload" href="/pika-ui/assets/js/3.d29f4808.js" as="script"><link rel="preload" href="/pika-ui/assets/js/1.d46cce2d.js" as="script"><link rel="preload" href="/pika-ui/assets/js/84.587934e9.js" as="script"><link rel="prefetch" href="/pika-ui/assets/js/10.8e223496.js"><link rel="prefetch" href="/pika-ui/assets/js/11.c3c681ac.js"><link rel="prefetch" href="/pika-ui/assets/js/12.ee9c03a4.js"><link rel="prefetch" href="/pika-ui/assets/js/13.1c00b18d.js"><link rel="prefetch" href="/pika-ui/assets/js/14.d22e27a8.js"><link rel="prefetch" href="/pika-ui/assets/js/15.a0d35f94.js"><link rel="prefetch" href="/pika-ui/assets/js/16.810224a9.js"><link rel="prefetch" href="/pika-ui/assets/js/17.9b8859bb.js"><link rel="prefetch" href="/pika-ui/assets/js/18.bb014ae9.js"><link rel="prefetch" href="/pika-ui/assets/js/19.9b589b4c.js"><link rel="prefetch" href="/pika-ui/assets/js/20.3be6f061.js"><link rel="prefetch" href="/pika-ui/assets/js/21.9cb5a560.js"><link rel="prefetch" href="/pika-ui/assets/js/22.f98a086b.js"><link rel="prefetch" href="/pika-ui/assets/js/23.175673c8.js"><link rel="prefetch" href="/pika-ui/assets/js/24.836db972.js"><link rel="prefetch" href="/pika-ui/assets/js/25.c7d6c64a.js"><link rel="prefetch" href="/pika-ui/assets/js/26.11b6b7a2.js"><link rel="prefetch" href="/pika-ui/assets/js/27.4853ff81.js"><link rel="prefetch" href="/pika-ui/assets/js/28.f8f12af7.js"><link rel="prefetch" href="/pika-ui/assets/js/29.97e442a0.js"><link rel="prefetch" href="/pika-ui/assets/js/30.5cc61a99.js"><link rel="prefetch" href="/pika-ui/assets/js/31.e0a941b6.js"><link rel="prefetch" href="/pika-ui/assets/js/32.8598b376.js"><link rel="prefetch" href="/pika-ui/assets/js/33.2e0f1434.js"><link rel="prefetch" href="/pika-ui/assets/js/34.b7fbcf1b.js"><link rel="prefetch" href="/pika-ui/assets/js/35.63f70b75.js"><link rel="prefetch" href="/pika-ui/assets/js/36.82120aaf.js"><link rel="prefetch" href="/pika-ui/assets/js/37.ace7ed9f.js"><link rel="prefetch" href="/pika-ui/assets/js/38.2a66b6e6.js"><link rel="prefetch" href="/pika-ui/assets/js/39.6cf1a825.js"><link rel="prefetch" href="/pika-ui/assets/js/4.f56a96b5.js"><link rel="prefetch" href="/pika-ui/assets/js/40.7b0a68ba.js"><link rel="prefetch" href="/pika-ui/assets/js/41.1daeab66.js"><link rel="prefetch" href="/pika-ui/assets/js/42.ac58404f.js"><link rel="prefetch" href="/pika-ui/assets/js/43.ce2dc85f.js"><link rel="prefetch" href="/pika-ui/assets/js/44.79c5116b.js"><link rel="prefetch" href="/pika-ui/assets/js/45.e704f241.js"><link rel="prefetch" href="/pika-ui/assets/js/46.13a46597.js"><link rel="prefetch" href="/pika-ui/assets/js/47.ba11edd3.js"><link rel="prefetch" href="/pika-ui/assets/js/48.b024f07d.js"><link rel="prefetch" href="/pika-ui/assets/js/49.811e77af.js"><link rel="prefetch" href="/pika-ui/assets/js/5.782a4c38.js"><link rel="prefetch" href="/pika-ui/assets/js/50.e72e686c.js"><link rel="prefetch" href="/pika-ui/assets/js/51.e9ef085f.js"><link rel="prefetch" href="/pika-ui/assets/js/52.73dcd07a.js"><link rel="prefetch" href="/pika-ui/assets/js/53.8268a716.js"><link rel="prefetch" href="/pika-ui/assets/js/54.f35371ee.js"><link rel="prefetch" href="/pika-ui/assets/js/55.714013af.js"><link rel="prefetch" href="/pika-ui/assets/js/56.f37ebfd7.js"><link rel="prefetch" href="/pika-ui/assets/js/57.0a4ab666.js"><link rel="prefetch" href="/pika-ui/assets/js/58.2ff2f546.js"><link rel="prefetch" href="/pika-ui/assets/js/59.7d97a317.js"><link rel="prefetch" href="/pika-ui/assets/js/6.5f43409a.js"><link rel="prefetch" href="/pika-ui/assets/js/60.5787ccfd.js"><link rel="prefetch" href="/pika-ui/assets/js/61.4e2e1cc6.js"><link rel="prefetch" href="/pika-ui/assets/js/62.5e1baa5a.js"><link rel="prefetch" href="/pika-ui/assets/js/63.2179962a.js"><link rel="prefetch" href="/pika-ui/assets/js/64.dd526afd.js"><link rel="prefetch" href="/pika-ui/assets/js/65.7443b332.js"><link rel="prefetch" href="/pika-ui/assets/js/66.7f4fb848.js"><link rel="prefetch" href="/pika-ui/assets/js/67.76e0cbc4.js"><link rel="prefetch" href="/pika-ui/assets/js/68.fc8db908.js"><link rel="prefetch" href="/pika-ui/assets/js/69.26db6b95.js"><link rel="prefetch" href="/pika-ui/assets/js/7.4a5c984d.js"><link rel="prefetch" href="/pika-ui/assets/js/70.ac1119b6.js"><link rel="prefetch" href="/pika-ui/assets/js/71.13f9f5ef.js"><link rel="prefetch" href="/pika-ui/assets/js/72.11f44e48.js"><link rel="prefetch" href="/pika-ui/assets/js/73.ffe9099a.js"><link rel="prefetch" href="/pika-ui/assets/js/74.0f55bd63.js"><link rel="prefetch" href="/pika-ui/assets/js/75.e3557926.js"><link rel="prefetch" href="/pika-ui/assets/js/76.aabbca44.js"><link rel="prefetch" href="/pika-ui/assets/js/77.2a01fe4c.js"><link rel="prefetch" href="/pika-ui/assets/js/78.dcdfe880.js"><link rel="prefetch" href="/pika-ui/assets/js/79.a47cd1c8.js"><link rel="prefetch" href="/pika-ui/assets/js/80.35c2afc7.js"><link rel="prefetch" href="/pika-ui/assets/js/81.bd2f880a.js"><link rel="prefetch" href="/pika-ui/assets/js/82.6b723e32.js"><link rel="prefetch" href="/pika-ui/assets/js/83.97c38af7.js"><link rel="prefetch" href="/pika-ui/assets/js/85.6e0e27c0.js"><link rel="prefetch" href="/pika-ui/assets/js/86.22dff0b8.js"><link rel="prefetch" href="/pika-ui/assets/js/87.bce56aba.js"><link rel="prefetch" href="/pika-ui/assets/js/88.c08fb3f9.js"><link rel="prefetch" href="/pika-ui/assets/js/89.6137d030.js"><link rel="prefetch" href="/pika-ui/assets/js/9.1d02c261.js">
+    <link rel="stylesheet" href="/pika-ui/assets/css/0.styles.8392f775.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="my-layout" data-v-68670c1c><div class="theme-container" data-v-68670c1c><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/pika-ui/" class="home-link router-link-active"><img src="/pika-ui/assets/img/pika-logo.png" alt="Pokemon" class="logo"> <span class="site-name can-hide">Pokemon</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件库" class="dropdown-title"><span class="title">组件库</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件库" class="mobile-dropdown-title"><span class="title">组件库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pika-ui/components/react/" class="nav-link">
+  React 版本
+</a></li><li class="dropdown-item"><!----> <a href="/pika-ui/components/vue/" class="nav-link">
+  Vue 版本
+</a></li></ul></div></div><div class="nav-item"><a href="/pika-ui/cli/" class="nav-link">
+  脚手架
+</a></div><div class="nav-item"><a href="/pika-ui/lib/" class="nav-link router-link-active">
+  工具
+</a></div><div class="nav-item"><a href="/pika-ui/plugins/" class="nav-link">
+  插件
+</a></div> <a href="https://git.souche-inc.com/souhce-Taro" target="_blank" rel="noopener noreferrer" class="repo-link">
+    项目地址
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件库" class="dropdown-title"><span class="title">组件库</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件库" class="mobile-dropdown-title"><span class="title">组件库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pika-ui/components/react/" class="nav-link">
+  React 版本
+</a></li><li class="dropdown-item"><!----> <a href="/pika-ui/components/vue/" class="nav-link">
+  Vue 版本
+</a></li></ul></div></div><div class="nav-item"><a href="/pika-ui/cli/" class="nav-link">
+  脚手架
+</a></div><div class="nav-item"><a href="/pika-ui/lib/" class="nav-link router-link-active">
+  工具
+</a></div><div class="nav-item"><a href="/pika-ui/plugins/" class="nav-link">
+  插件
+</a></div> <a href="https://git.souche-inc.com/souhce-Taro" target="_blank" rel="noopener noreferrer" class="repo-link">
+    项目地址
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/pika-ui/lib/router.html" class="sidebar-link">Taro-Router 路由库</a></li><li><a href="/pika-ui/lib/bury.html" aria-current="page" class="active sidebar-link">Taro-Bury 埋点库</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pika-ui/lib/bury.html#说明" class="sidebar-link">说明</a></li><li class="sidebar-sub-header"><a href="/pika-ui/lib/bury.html#使用方法" class="sidebar-link">使用方法</a></li></ul></li><li><a href="/pika-ui/lib/request.html" class="sidebar-link">Taro-Request 请求库</a></li><li><a href="/pika-ui/lib/helper.html" class="sidebar-link">Taro-helper 工具库</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="taro-bury-埋点库"><a href="#taro-bury-埋点库" class="header-anchor">#</a> Taro-Bury 埋点库</h1> <h2 id="说明"><a href="#说明" class="header-anchor">#</a> 说明</h2> <blockquote><p>针对多平台的埋点库</p></blockquote> <h2 id="使用方法"><a href="#使用方法" class="header-anchor">#</a> 使用方法</h2> <h3 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>// 老鲁班版本
+<span class="token function">yarn</span> <span class="token function">add</span> @souche-taro/bury
+// 新鲁班版本
+<span class="token function">yarn</span> <span class="token function">add</span> @souche-taro/bury2
+</code></pre></div><h3 id="导入配置"><a href="#导入配置" class="header-anchor">#</a> 导入配置</h3> <h4 id="react版本"><a href="#react版本" class="header-anchor">#</a> React版本</h4> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token comment">// 老鲁班版本</span>
+<span class="token keyword">import</span> Bury <span class="token keyword">from</span> <span class="token string">'@souche-taro/bury'</span>
+
+Bury<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    platform<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    userTag<span class="token operator">?</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    autoUserTag<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    debug<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    env<span class="token operator">:</span> <span class="token string">'production'</span><span class="token punctuation">,</span> <span class="token comment">//development, prepub, production</span>
+    <span class="token function-variable function">beforeReport</span><span class="token operator">:</span> <span class="token punctuation">(</span>typeId<span class="token punctuation">,</span> data<span class="token punctuation">,</span> next<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 新鲁班版本</span>
+<span class="token keyword">import</span> Bury <span class="token keyword">from</span> <span class="token string">'@souche-taro/bury2'</span>
+
+Bury<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    platform<span class="token operator">:</span> <span class="token number">3</span> <span class="token operator">|</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    userTag<span class="token operator">?</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 就是uid</span>
+    umid<span class="token operator">?</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 友盟id</span>
+    autoUserTag<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    appName<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    projectId<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    debug<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    env<span class="token operator">:</span> <span class="token string">'production'</span><span class="token punctuation">,</span> <span class="token comment">//development, prepub, production</span>
+    <span class="token function-variable function">beforeReport</span><span class="token operator">:</span> <span class="token punctuation">(</span>typeId<span class="token punctuation">,</span> data<span class="token punctuation">,</span> next<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="vue版本"><a href="#vue版本" class="header-anchor">#</a> Vue版本</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 老鲁班版本</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+    vueBuryDirective<span class="token punctuation">,</span>
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@souche-taro/bury'</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>vueBuryDirective<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  platform<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+  userTag<span class="token operator">?</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+  autoUserTag<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  debug<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">beforeReport</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">typeId<span class="token punctuation">,</span> data<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 新鲁班版本</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+    vueBuryDirective<span class="token punctuation">,</span>
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@souche-taro/bury2'</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>vueBuryDirective<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    platform<span class="token operator">:</span> <span class="token number">3</span> <span class="token operator">|</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    userTag<span class="token operator">?</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 就是uid</span>
+    umid<span class="token operator">?</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 友盟id</span>
+    autoUserTag<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    appName<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    projectId<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    debug<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    env<span class="token operator">:</span> <span class="token string">'production'</span><span class="token punctuation">,</span> <span class="token comment">//development, prepub, production</span>
+    <span class="token function-variable function">beforeReport</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">typeId<span class="token punctuation">,</span> data<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="手动埋点"><a href="#手动埋点" class="header-anchor">#</a> 手动埋点</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 老鲁班</span>
+<span class="token comment">// 老鲁班会自动将bury实例挂载到Taro上</span>
+Taro<span class="token punctuation">.</span>$bury<span class="token punctuation">.</span><span class="token function">sendById</span><span class="token punctuation">(</span>typeId<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...业务参数</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 新鲁班</span>
+<span class="token comment">// 新鲁班不会自动将bury实例挂载到Taro上,需要自己手动挂载</span>
+<span class="token comment">// 该方法用于兼容之前老版本,方便切换</span>
+bury<span class="token punctuation">.</span><span class="token function">sendById</span><span class="token punctuation">(</span>typeId<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...其他参数</span>
+    eventType<span class="token operator">:</span> <span class="token string">'CLICK'</span> <span class="token operator">|</span> <span class="token string">'IMPRESSION'</span> <span class="token comment">// 新鲁班适用</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+bury<span class="token punctuation">.</span><span class="token function">customizeSend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    buryId<span class="token punctuation">,</span> 
+    eventType<span class="token punctuation">,</span> 
+    attributes<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// ...业务参数</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="指令埋点"><a href="#指令埋点" class="header-anchor">#</a> 指令埋点</h3> <div class="language-vue extra-class"><pre class="language-vue"><code>// 有参数版
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>text</span> <span class="token attr-name"><span class="token namespace">v-bury:</span>bury_id.show.tap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>buryParams<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{ msg }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>text</span><span class="token punctuation">&gt;</span></span>
+// 无参数版
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>text</span> <span class="token attr-name"><span class="token namespace">v-bury:</span>bury_id.show.tap</span><span class="token punctuation">&gt;</span></span>{{ msg }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>text</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>参数解释</p> <ol><li>bury_id: 埋点id, 效果同buryParams中的buryId参数</li> <li>show: 元素显示时触发</li> <li>tap: 元素点击时触发</li> <li>buryParams: 携带业务参数</li></ol> <h3 id="usertag相关"><a href="#usertag相关" class="header-anchor">#</a> userTag相关</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 设置userTag</span>
+Taro<span class="token punctuation">.</span>$bury<span class="token punctuation">.</span><span class="token function">setUserTag</span><span class="token punctuation">(</span><span class="token string">'新userTag'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 获取userTag</span>
+Taro<span class="token punctuation">.</span>$bury<span class="token punctuation">.</span><span class="token function">getUserTag</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="埋点开关"><a href="#埋点开关" class="header-anchor">#</a> 埋点开关</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 关闭</span>
+Taro<span class="token punctuation">.</span>$bury<span class="token punctuation">.</span><span class="token function">stopBury</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// 打开</span>
+Taro<span class="token punctuation">.</span>$bury<span class="token punctuation">.</span><span class="token function">beginBury</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="typeid和参数统一修改"><a href="#typeid和参数统一修改" class="header-anchor">#</a> typeId和参数统一修改</h3> <p>通过beforeReport中传入next参数来修改typeId和传递参数</p> <div class="language-js extra-class"><pre class="language-js"><code>Bury<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token function-variable function">beforeReport</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">typeId<span class="token punctuation">,</span> data<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            typeId<span class="token operator">:</span> <span class="token string">'self-id'</span><span class="token punctuation">,</span> <span class="token comment">// 可以修改原typeId</span>
+            shopCode<span class="token operator">:</span> <span class="token string">'000123'</span><span class="token punctuation">,</span> <span class="token comment">// 如果data中有shopCode会替换原来的shopCode, 没有会增加</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="修改config"><a href="#修改config" class="header-anchor">#</a> 修改config</h3> <div class="language-typescript extra-class"><pre class="language-typescript"><code>bury<span class="token punctuation">.</span><span class="token function">setConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    appName<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">4/13/2022, 2:05:21 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pika-ui/lib/router.html" class="prev">
+        Taro-Router 路由库
+      </a></span> <span class="next"><a href="/pika-ui/lib/request.html">
+        Taro-Request 请求库
+      </a>
+      →
+    </span></p></div> </main></div> <!----></div><div class="global-ui"></div></div>
+    <script src="/pika-ui/assets/js/app.8c90d7c6.js" defer></script><script src="/pika-ui/assets/js/8.af1739a3.js" defer></script><script src="/pika-ui/assets/js/3.d29f4808.js" defer></script><script src="/pika-ui/assets/js/1.d46cce2d.js" defer></script><script src="/pika-ui/assets/js/84.587934e9.js" defer></script>
+  </body>
+</html>
